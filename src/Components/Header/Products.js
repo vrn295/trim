@@ -11,12 +11,12 @@ const Products = () => {
           return (
             <div className="product-container" key={key}>
               <div>
-                <span className='product-hover-text'>
+                {/* <span className='product-hover-text'>
                   Pariatur nulla nisi veniam reprehenderit ipsum duis amet
                   proident aliquip laborum labore dolor. Aliquip sint est
                   laborum enim quis laboris amet aliquip est ut qui aliqua
                   eiusmod.
-                </span>
+                </span> */}
                 <img
                   className="product-img"
                   src={require(`./ProductsImage/product${data.image}.jpg`)}

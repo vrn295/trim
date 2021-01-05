@@ -21,8 +21,9 @@ const GalleryComp = () => {
 
   return (
     <div>
-      <div className="gallery-nav"></div>
-      <h1 className="gallery-h">Gallery</h1>
+      <div className="nav-box">
+        <h1 className="nav-box-text">Gallery</h1>
+      </div>
       <section className="gallery">
         <Gallery photos={photos} onClick={openLightbox} />
         <ModalGateway>

@@ -1,25 +1,11 @@
-.gallery-nav {
-  height: 200px;
-  background-color: rgb(46, 44, 44);
-  position: absolute;
-  width: 100%;
-  top: 0%;
-  z-index: -2;
-}
-
-.gallery-h {
-  color: white;
-  font-family: "Alata", sans-serif;
-  font-size: 50px;
-  position: relative;
-  top: 30px;
-  display: flex;
-  justify-content: center;
-  text-decoration-line: underline;
-}
-
 .gallery {
   position: relative;
+  margin: 180px;
+}
 
-  margin: 100px;
+@media screen and (max-width: 600px) {
+  .gallery {
+    margin: 20px;
+    margin-top: 145px;
+  }
 }

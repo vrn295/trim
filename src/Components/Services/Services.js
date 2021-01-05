@@ -4,7 +4,9 @@ import "./Services.css";
 const Services = () => {
   return (
     <div className="body">
-      <h1>Hello</h1>
+      <div className="nav-box">
+        <h1 className="nav-box-text">Our Services</h1>
+      </div>
     </div>
   );
 };

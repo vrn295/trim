@@ -1,0 +1,44 @@
+.products {
+  position: relative;
+  top: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-h1 {
+  font-family: "Alata", sans-serif;
+  font-size: 45px;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-img {
+  max-width: 300px;
+  margin-left: 20px;
+}
+
+.product-name {
+  font-family: "Alata", sans-serif;
+  font-size: 35px;
+}
+
+.product-price {
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+.product-img:hover {
+  background-color: blue;
+  
+}

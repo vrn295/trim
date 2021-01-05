@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.nav-service {
+.nav-box {
   height: 200px;
   background-color: rgb(46, 44, 44);
   position: absolute;
@@ -18,7 +18,7 @@ p {
   top: 70%;
 }
 
-.about-us {
+.nav-box-text {
   color: white;
   font-family: "Alata", sans-serif;
   font-size: 50px;

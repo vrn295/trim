@@ -5,12 +5,8 @@ import "./About.css";
 const About = () => {
   return (
     <div className="body">
-      <div className="nav-service">
-        {/* <img
-            src={require("./service-img1.jpg")}
-            className="service-container"
-          ></img> */}
-        <h1 className="about-us">About Us</h1>
+      <div className="nav-box">
+        <h1 className="nav-box-text">About Us</h1>
       </div>
       <div className="barbers">
         <img

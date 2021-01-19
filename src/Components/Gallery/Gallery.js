@@ -20,27 +20,29 @@ const GalleryComp = () => {
   };
 
   return (
-    <div>
-      <div className="nav-box">
+    <div className="gallery-container">
+      <div id='gallery-nav-box' className="nav-box">
         <h1 className="nav-box-text">Gallery</h1>
       </div>
-      <section className="gallery">
-        <Gallery photos={photos} onClick={openLightbox} />
-        <ModalGateway>
-          {viewerIsOpen ? (
-            <Modal onClose={closeLightbox}>
-              <Carousel
-                currentIndex={currentImage}
-                views={photos.map((x) => ({
-                  ...x,
-                  srcset: x.srcSet,
-                  caption: x.title,
-                }))}
-              />
-            </Modal>
-          ) : null}
-        </ModalGateway>
-      </section>
+      <div className='gallery-img-container'>
+        <section className="gallery">
+          <Gallery photos={photos} onClick={openLightbox} />
+          <ModalGateway>
+            {viewerIsOpen ? (
+              <Modal onClose={closeLightbox}>
+                <Carousel
+                  currentIndex={currentImage}
+                  views={photos.map((x) => ({
+                    ...x,
+                    srcset: x.srcSet,
+                    caption: x.title,
+                  }))}
+                />
+              </Modal>
+            ) : null}
+          </ModalGateway>
+        </section>
+        </div>
     </div>
   );
 };

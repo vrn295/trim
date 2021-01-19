@@ -1,132 +1,69 @@
-.body {
+.about-container {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-}
-
-.nav-box {
-  height: 200px;
-  background-color: rgb(46, 44, 44);
-  position: absolute;
-  width: 100%;
-  top: 0%;
-  z-index: -2;
-}
-
-p {
-  position: absolute;
-  top: 70%;
-}
-
-.nav-box-text {
-  color: white;
-  font-family: "Alata", sans-serif;
-  font-size: 50px;
-  position: relative;
-  top: 55%;
   display: flex;
-  justify-content: center;
-  text-decoration-line: underline;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 1.5vw;
 }
 
 .barbers {
-  position: absolute;
-  top: 50%;
-  left: 15%;
-  right: 15%;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  justify-content: center;
+  align-items: center;
+  margin: 0vw 0vw 3vw 0vw;
 }
 
-.barber-1 {
-  position: relative;
-  max-width: 300px;
-  margin-bottom: 150px;
-  left: 15%;
-}
+.barber-1,
 .barber-2 {
-  position: relative;
-  max-width: 300px;
-  left: 15%;
-}
-
-.b1-name {
-  position: absolute;
-  top: 2%;
-  left: 50%;
-  font-family: "Alata", sans-serif;
-  font-size: 50px;
-}
-
-.b2-name {
-  position: absolute;
-  top: 63%;
-  left: 50%;
-  font-family: "Alata", sans-serif;
-  font-size: 50px;
-}
-
-@media screen and (max-width: 1500px) {
-  .nav-service {
-    height: 150px;
-  }
-  .about-us {
-    font-size: 40px;
-  }
-}
-
-.b1-p {
-  position: absolute;
-  top: 12%;
-  left: 50%;
-  font-family: "Alata", sans-serif;
-  font-size: 20px;
-  max-width: 450px;
-}
-
-.b2-p {
-  position: absolute;
-  top: 72%;
-  left: 50%;
-  font-family: "Alata", sans-serif;
-  font-size: 20px;
-  max-width: 450px;
-}
-
-.history {
-  position: relative;
-  top: 1150px;
   display: flex;
-  align-content: space-around;
   justify-content: center;
+  align-items: center;
+  margin-top: 5vw;
 }
 
-.history-h {
-  font-family: "Alata", sans-serif;
-  font-size: 50px;
-  text-decoration-line: underline;
+.barber-info {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin-left: 2vw;
 }
 
-.history-p {
-  margin-top: 40px;
-  font-family: "Alata", sans-serif;
-  font-size: 20px;
-  max-width: 1000px;
-  text-align: justify;
+.barber-img {
+  max-width: 20vw;
 }
 
-.about-gallery {
-  position: relative;
-  top: 1600px;
+.barber-name {
+  font-size: 3vw;
+  margin-bottom: 0.5vw;
+}
+
+.company-history {
+  text-align: center;
+  max-width: 70vw;
+  text-align: center;
+  margin-top: 8vw;
+}
+
+.company-history-h2 {
+  font-size: 4vw;
+}
+.company-history-p {
+  margin: 2vw 0px 2vw 0vw;
+  font-size: 2vw;
+}
+
+#about-qoute-line {
+  max-width: 70vw;
 }
 
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   align-content: center;
-
+  margin: 2vw 0vw 5vw 0vw;
   justify-content: center;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
@@ -147,20 +84,47 @@ p {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .barbers {
+    margin: 3vw 0vw 0vw 0vw;
+  }
+
+  .barber-info {
+    width: 50vw;
+  }
+
+  .barber-img {
+    max-width: 30vw;
+    margin-right: 3vw;
+  }
+
+  .barber-name {
+    font-size: 5vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .barber-details {
+    font-size: 2.5vw;
+  }
+
+  .company-history {
+    margin-top: 6vw;
+  }
+
+  .company-history-h2 {
+    font-size: 6vw;
+  }
+  .company-history-p {
+    font-size: 2.5vw;
+  }
+
   .column {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
   }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
+  .about-gallery {
+    margin: 0vw 2vw 0vw 2vw;
   }
 }

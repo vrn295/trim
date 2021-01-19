@@ -1,15 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import logo from './Media/TRIM-white.png'
 import "./Navbar.css";
 
-const Navbar = () => {
+class Navbar extends React.Component {
+  listener = null;
+  state = {
+    nav:false,
+    logo:false
+  }
+  componentDidMount() {
+     window.addEventListener("scroll", this.handleScroll);
+   }
+   componentWillUnmount() {
+      window.removeEventListener('scroll');
+    }
+   handleScroll= () => {
+     if (window.pageYOffset > 200) {
+         if(!this.state.nav){
+           this.setState({ nav: true });
+           this.setState({logo: true});
+         }
+     }else{
+         if(this.state.nav){
+           this.setState({ nav: false });
+           this.setState({logo: false});
+         }
+     }
+
+   }
+   render(){
   return (
-    <div className="navbar-container">
-      <nav className="navbar">
-        <h1 className="logo">Trim</h1>
+    <div>
+    <nav>
+      <div className={`${this.state.nav && 'Nav__black'}`}>
+        <img id='logo-hidden' className={`${this.state.nav && 'logo'}`}  src={logo} alt="logo"/>
+        <div className='nav-list-container'>
         <ul className="nav-ul">
-          <Link to="/">
+          <Link to="/trim">
             <li className="nav-list">
               <a id="home" className="nav-index" href="# ">
                 Home
@@ -45,9 +73,13 @@ const Navbar = () => {
             </li>
           </Link>
         </ul>
+        </div>
+      </div>
       </nav>
-    </div>
+      </div>
+  
   );
-};
+}
+}
 
 export default Navbar;

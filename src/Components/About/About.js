@@ -1,70 +1,55 @@
 import React from "react";
-
 import "./About.css";
 
 const About = () => {
   return (
-    <div className="body">
+    <div className="about-container">
       <div className="nav-box">
         <h1 className="nav-box-text">About Us</h1>
       </div>
       <div className="barbers">
-        <img
-          className="barber-1"
-          src={require("./barber-1.png")}
-          alt="not"
-        ></img>
-
-        <img
-          className="barber-2"
-          src={require("./barber-2.png")}
-          alt="not"
-        ></img>
-        <div className="b-name">
-          <h2 className="b1-name">Alex Parker</h2>
-          <h2 className="b2-name">Peter Harrison</h2>
-          <p className="b1-p">
-            Velit quis ipsum esse incididunt aliqua irure incididunt voluptate
-            mollit mollit minim ad. Labore ex laboris incididunt ex ut duis
-            officia do adipisicing ullamco quis pariatur id. Labore ad Lorem
-            elit pariatur Lorem mollit irure commodo exercitation quis excepteur
-            veniam.
-          </p>
-          <p className="b2-p">
-            Id et excepteur laborum velit esse ad excepteur officia labore.
-            Incididunt do sit voluptate proident irure incididunt cupidatat non
-            irure mollit esse cupidatat. Veniam ad fugiat aliqua deserunt dolor
-            elit ullamco. Aliqua minim non magna enim adipisicing laborum
-            reprehenderit.
-          </p>
+        <div className='barber-1'>
+          <img
+              className="barber-img"
+              src={require("./barber-1.png")}
+              alt="Barber 1"
+            ></img>
+            <div className='barber-info'>
+              <h2 className="barber-name">Alex Parker</h2>
+              <p className="barber-details">
+                  Velit quis ipsum esse incididunt aliqua irure incididunt voluptate
+                  mollit mollit minim ad. Labore ex laboris incididunt ex ut duis
+                  officia do adipisicing ullamco quis pariatur id.
+              </p>
+            </div>
         </div>
+          <div className='barber-2'>
+            <img
+              className="barber-img"
+              src={require("./barber-2.png")}
+              alt="Barber 2"
+            ></img>
+            <div className='barber-info'>
+              <h2 className="barber-name">Peter Harrison</h2>
+              <p className="barber-details">
+                  Id et excepteur laborum velit esse ad excepteur officia labore.
+                  Incididunt do sit voluptate proident irure incididunt cupidatat non
+                  irure mollit esse cupidatat.
+                </p>
+            </div>
+          </div>
       </div>
-      <div className="history">
-        <h2 className="history-h">Our History</h2>
-        <p className="history-p">
+      <div id='about-qoute-line' className='qoute-line'></div>
+
+      <div className="company-history">
+        <h2 className="company-history-h2">Our History</h2>
+        <p className="company-history-p">
           Consequat eu voluptate nisi officia non aliqua. Sint et irure enim
           esse exercitation mollit ullamco. Voluptate anim proident eiusmod
-          minim magna ut deserunt irure occaecat id veniam duis excepteur. Qui
-          anim mollit cupidatat aliqua reprehenderit in reprehenderit culpa elit
-          quis incididunt. Adipisicing reprehenderit quis proident Lorem
-          exercitation magna. Cillum cillum duis mollit reprehenderit eiusmod
-          occaecat nulla quis mollit cillum tempor aliqua. Deserunt eu nostrud
-          ea proident laborum elit aliquip occaecat dolore. Velit labore amet
-          tempor labore duis minim. Laborum quis eu enim tempor. Labore labore
-          elit adipisicing aliquip magna sit culpa nulla enim consectetur ut
-          laboris. Reprehenderit aliquip elit ex dolore ea occaecat. Laboris
-          duis anim reprehenderit nostrud consequat labore do ad et. Laboris
-          reprehenderit eiusmod duis culpa ex commodo occaecat anim consequat
-          eiusmod sint magna. Voluptate cillum adipisicing exercitation dolor.
-          Officia minim quis officia elit. Anim Lorem deserunt laboris ad
-          ullamco minim irure cillum mollit. Minim mollit laboris incididunt ea
-          commodo consectetur ad cillum aliqua Lorem. Deserunt commodo non
-          officia aliqua cupidatat. Eiusmod exercitation non commodo est qui
-          officia officia sunt enim fugiat incididunt in anim. Est adipisicing
-          et sunt adipisicing commodo elit magna cupidatat. Sit consectetur
-          incididunt sint do mollit est dolore amet aute dolor et.
+          minim magna ut deserunt irure occaecat id veniam duis excepteur.
         </p>
       </div>
+
 
       <div className="about-gallery">
         <div className="row">

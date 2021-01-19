@@ -1,22 +1,17 @@
 export const productData = [
   {
-    name: "Example",
+    name: "Trimmer",
     image: "1",
-    price: "$12.55",
+    price: "$20",
   },
   {
-    name: "Example",
+    name: "Pomade",
     image: "2",
-    price: "$12.55",
+    price: "$8.55",
   },
   {
-    name: "Example",
+    name: "Hair Gel",
     image: "3",
-    price: "$12.55",
-  },
-  {
-    name: "Example",
-    image: "4",
-    price: "$12.55",
+    price: "$5.25",
   },
 ];

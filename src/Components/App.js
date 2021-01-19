@@ -7,6 +7,7 @@ import Services from "./Services/Services";
 import GalleryComp from "./Gallery/Gallery";
 import About from "./About/About";
 import ContactUs from "./ContactUs/ContactUs";
+import Footer from './Footer/Footer'
 
 class App extends Component {
   constructor(props) {
@@ -19,12 +20,13 @@ class App extends Component {
         <Router>
           <Navbar />
           <Switch>
-            <Route path="/" exact component={Header} />
+            <Route path="/trim" exact component={Header} />
             <Route path="/services" exact component={Services} />
             <Route path="/gallery" exact component={GalleryComp} />
             <Route path="/about" exact component={About} />
             <Route path="/contact" exact component={ContactUs} />
           </Switch>
+          <Footer />
         </Router>
       </div>
     );
